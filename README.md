@@ -1,59 +1,33 @@
-# CoinsDashboardProject
+# CoinsProject
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
 
-## Development server
+## Build the app
 
-To start a local development server, run:
+```bash
+npm install
+```
+
+## Run the app
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## About the app
 
-## Code scaffolding
+- It uses the latest Angular with the standalone approach with PrimeNg and Primeflex
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Feature folder has the table component that has the requested functionality.
 
-```bash
-ng generate component component-name
-```
+- Shared folder has:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+  - interceptors folder with the interceptor for error handling
+  - interfaces folder with the state interface for the store and the interface for the coins
+  - services folder with the service that calls the endpoint
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Store folder has all the folders with the files that used for the store:
+  - actions
+  - effects
+  - reducers
+  - selectors
